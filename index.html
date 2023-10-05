@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestLine Travel</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div class="banner">
+        <img class="img banner" src="img/banner.jpg" alt="banner">
+        <img src="img/line.svg" alt="">
+        <div class="navegacion">
+            <nav>
+                <div class="logotipo">
+                    <a href="index.html">
+                        <img class="logo" src="img/logo.jpg" alt="Logo">
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <a href="">
+                            <li>Hotel</li>
+                        </a>
+                        <a href="">
+                            <li>Vuelos</li>
+                        </a>
+                        <a href="">
+                            <li>Vuelo + Hotel</li>
+                        </a>
+                        <a href="">
+                            <li>Mi cuenta</li>
+                        </a>
+                        <a href="">
+                            <li>Consultar reservacion</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="idioma">
+                    <div>
+                        <p>Idioma:</p>
+                    </div>
+                    <div>
+                        <a href="">
+                            <p>Ingles</p>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="form">
+            <div>
+                <ul>
+                    <li id="option1" class="option option-active">
+                        <a href="#">Hotel</a>
+                    </li>
+                    <li id="option2" class="option">
+                        <a href="#">Vuelos</a>
+                    </li>
+                    <li id="option3" class="option">
+                        <a href="#">Tours</a>
+                    </li>
+                    <li id="option4" class="option">
+                        <a href="#">Transfers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cajas">
+            <div id="content1" class="Hotel active">
+                <div>
+                    <div>
+                        <p>Destino, hotel, punto de interes</p>
+                        <div>
+                            <img src="img/icons/location.png" alt="">
+                            <input type="search" placeholder="Destino, hotel, punto de interes">
+                        </div>
+                    </div>
+                    <div>
+                        <p>Fechas</p>
+                        <div>
+                            <img src="img/icons/date.png" alt="">
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div>
+                        <p>Huespedes</p>
+                        <div>
+                            <img src="img/icons/people.png" alt="">
+                            <input type="number" placeholder="2 adultos, 1 Habitacion">
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <div>
+                            <button>Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content2" class="Vuelo">
+                <div class="tipo-viaje">
+                    <div>
+                        <input type="radio" name="Redondo" id="vuelo-rt">
+                        <p>Redondo</p>
+                    </div>
+                    <div>
+                        <input type="radio" name="sencillo" id="vuelo-ow">
+                        <p>Sencillo</p>
+                    </div>
+                </div>
+                <div class="form-vuelo">
+                    <div>
+                        <p>Origen</p>
+                        <div>
+                            <img src="img/icons/despegue.png" alt="">
+                            <input type="search" placeholder="Origen">
+                        </div>
+                    </div>
+                    <div>
+                        <p>Destino</p>
+                        <div>
+                            <img src="img/icons/aterrizaje.png" alt="">
+                            <input type="search" placeholder="Destino">
+                        </div>
+                    </div>
+                    <div>
+                        <p>Fechas</p>
+                        <div>
+                            <img src="img/icons/date.png" alt="">
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div>
+                        <p>Pasajeros</p>
+                        <div>
+                            <img src="img/icons/people.png" alt="">
+                            <input type="number" placeholder="2 adultos, 1 Habitacion">
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <div>
+                            <button>Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content3" class="Tours">
+                <div>
+                    <div>
+                        <p>Destino</p>
+                        <div>
+                            <img src="img/icons/location.png" alt="">
+                            <input type="search" name="destino" id="" placeholder="Destino">
+                        </div>
+                    </div>
+                    <div>
+                        <p>Fecha</p>
+                        <div>
+                            <img src="img/icons/date.png" alt="">
+                            <input type="date" name="fecha" id="">
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <div>
+                            <button>Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content4" class="Transfers">
+                <div class="tipo-viaje">
+                    <div>
+                        <input type="radio" name="Redondo" id="vuelo-rt">
+                        <p>Redondo</p>
+                    </div>
+                    <div>
+                        <input type="radio" name="sencillo" id="vuelo-ow">
+                        <p>Sencillo</p>
+                    </div>
+                </div>
+                <div class="form-transfer">
+                    <div>
+                        <p>Origen</p>
+                        <div>
+                            <img src="img/icons/despegue.png" alt="">
+                            <input type="search" placeholder="Origen">
+                        </div>
+                    </div>
+                    <div>
+                        <p>Destino</p>
+                        <div>
+                            <img src="img/icons/aterrizaje.png" alt="">
+                            <input type="search" placeholder="Destino">
+                        </div>
+                    </div>
+                    <div>
+                        <p>Fechas</p>
+                        <div>
+                            <img src="img/icons/date.png" alt="">
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div>
+                        <p>Pasajeros</p>
+                        <div>
+                            <img src="img/icons/people.png" alt="">
+                            <input type="number" placeholder="2 adultos, 1 Habitacion">
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <div>
+                            <button>Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="texto-img">
+            <p>Descubre tu proximo destino en un solo lugar</p>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="leyenda">
+            <p>Vuelos a precios incribles con BestLine, tu agencia de viajes</p>
+        </div>
+        <div class="mensaje">
+            <p>Cancelación Gratis en miles de Hoteles</p>
+        </div>
+        <div class="promociones">
+            <div>
+                <img src="img/comerciales/promocion1.png" alt="">
+                <p>Destinos de playas</p>
+                <p class="descuento">Hasta 67% de descuento</p>
+            </div>
+            <div>
+                <img src="img/comerciales/promocion2.png" alt="">
+                <p>Destinos de ciudad</p>
+                <p class="descuento">Hasta 60% de descuento</p>
+            </div>
+            <div>
+                <img src="img/comerciales/promocion3.png" alt="">
+                <p>Vive una experiencia unica</p>
+                <p class="descuento">Hasta 42% de descuento</p>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="box">
+            <div>
+                <p>Paga a MESES SIN INTERESES</p>
+            </div>
+            <div>
+                <img src="img/pagos/amex_logo.svg" alt="">
+                <img src="img/pagos/bbva_logo.svg" alt="">
+                <img src="img/pagos/citibanamex_logo.svg" alt="">
+                <img src="img/pagos/hsbc_logo.svg" alt="">
+                <img src="img/pagos/mc_logo.svg" alt="">
+                <img src="img/pagos/nu_logo.svg" alt="">
+                <img src="img/pagos/visa_logo.svg" alt="">
+            </div>
+            <div>
+                <p class="formas-pago">Consulta nuestras formas de pago</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="img/line.svg" alt="">
+    </div>
+    <script type="text/javascript" src="js/tabs.js"></script>
+</body>
+</html>

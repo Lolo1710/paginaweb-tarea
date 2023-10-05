@@ -1,0 +1,550 @@
+/* Generales */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Menu */
+
+.navegacion  , nav{
+    display: flex;
+    width: 100%;
+    background: white;
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.img.banner{
+    display: block;
+    height: 400px;
+}
+
+.banner .navegacion{
+    position: absolute;
+}
+
+.banner .texto-img{
+    position: absolute;
+}
+
+.texto-img{
+    margin-top: 350px;
+    margin-left: 50px;
+    color: white;
+    font-size: 1rem;
+}
+
+.logotipo{
+    display: flex;
+    align-items: center;
+    width: 10%;
+    justify-content: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: center;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu li{
+    margin: 7px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    width: 100px;
+    max-width: 200px;
+}
+
+.idioma{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.idioma p{
+    margin: 5px;
+}
+
+.idioma a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Navs de busqueda */
+
+.form{
+    display: flex;
+    margin-top: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form div{
+    width: 95.2%;
+}
+
+.banner .form{
+    position: absolute;
+}
+
+.form div ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.form div a{
+    text-decoration: none;
+    color: white;
+}
+
+.form .option{
+    background:  #01a8fcc8;
+    margin: 1px;
+    padding: 1rem;
+}
+
+.form .option:hover{
+    background-color: rgba(221, 255, 0, 0.582);
+}
+
+.form .option.option-active{
+    background-color: white;
+}
+
+.form .option.option-active a{
+    color: black;
+}
+
+/* Cajas de busqueda*/
+
+.cajas{
+    display: flex;
+    margin-top: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .cajas{
+    position: absolute;
+}
+
+/* Hotel */
+
+.Hotel.active {
+    width: 95%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0rem 0.5rem 0.5rem 0.5rem;
+    display: block;
+}
+
+.Hotel.active div{
+    display: flex;
+    width: 100%;
+}
+
+.Hotel.active div div{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 0.5rem;
+}
+
+.Hotel.active div div div{
+    display: flex;
+    flex-direction: row;
+    border-bottom: gray solid 1px;
+    width: 100%;
+}
+
+.Hotel.active div div input{
+    border: none;
+    width: 100%;
+}
+
+.Hotel.active div div img{
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+}
+
+.Hotel.active div div p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.7rem;
+    color: #333;
+}
+
+.Hotel.active .btn div{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+    border: none;
+}
+
+.Hotel.active .btn div button{
+    padding: 1rem;
+    width: 80%;
+    border: none;
+    background-color: #01a8fcc8;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.Hotel{
+    display: none;
+}
+
+/* Vuelo */
+.Vuelo.active{
+    width: 95%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0rem 0.5rem 0.5rem 0.5rem;
+    display: block;
+}
+
+.Vuelo.active .tipo-viaje, .Vuelo.active .tipo-viaje div{
+    display: flex;
+    flex-direction: row;
+}
+
+.Vuelo.active .tipo-viaje div input, .Vuelo.active .tipo-viaje div p{
+    margin: 5px;
+}
+
+.Vuelo.active .form-vuelo{
+    display: flex;
+    width: 100%;
+}
+
+.Vuelo.active .form-vuelo div{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 0.5rem;
+}
+
+.Vuelo.active .form-vuelo div div{
+    display: flex;
+    flex-direction: row;
+    border-bottom: gray solid 1px;
+    width: 100%;
+}
+
+.Vuelo.active .form-vuelo div input{
+    border: none;
+    width: 100%;
+}
+
+.Vuelo.active .form-vuelo div img{
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+}
+
+.Vuelo.active .form-vuelo div p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.7rem;
+    color: #333;
+}
+
+.Vuelo.active .form-vuelo .btn div{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+    border: none;
+}
+
+.Vuelo.active .form-vuelo .btn div button{
+    padding: 1rem;
+    width: 80%;
+    border: none;
+    background-color: #01a8fcc8;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.Vuelo{
+    display: none;
+}
+
+/* Tours */
+
+.Tours.active{
+    width: 95%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0rem 0.5rem 0.5rem 0.5rem;
+    display: block;
+}
+
+.Tours.active div{
+    display: flex;
+    width: 100%;
+}
+
+.Tours.active div div{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 0.5rem;
+}
+
+.Tours.active div div div{
+    display: flex;
+    flex-direction: row;
+    border-bottom: gray solid 1px;
+    width: 100%;
+}
+
+.Tours.active div div input{
+    border: none;
+    width: 100%;
+}
+
+.Tours.active div div img{
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+}
+
+.Tours.active div div p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.7rem;
+    color: #333;
+}
+
+.Tours.active div .btn div{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+    border: none;
+}
+
+.Tours.active div .btn div button{
+    padding: 1rem;
+    width: 80%;
+    border: none;
+    background-color: #01a8fcc8;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.Tours{
+    display: none;
+}
+
+/* Transfers */
+
+.Transfers.active{
+    width: 95%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0rem 0.5rem 0.5rem 0.5rem;
+    display: block;
+}
+
+.Transfers.active .tipo-viaje, .Transfers.active .tipo-viaje div{
+    display: flex;
+    flex-direction: row;
+}
+
+.Transfers.active .tipo-viaje div input, .Transfers.active .tipo-viaje div p{
+    margin: 5px;
+}
+
+.Transfers.active .form-transfer{
+    display: flex;
+    width: 100%;
+}
+
+.Transfers.active .form-transfer div{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 0.5rem;
+}
+
+.Transfers.active .form-transfer div div{
+    display: flex;
+    flex-direction: row;
+    border-bottom: gray solid 1px;
+    width: 100%;
+}
+
+.Transfers.active .form-transfer div input{
+    border: none;
+    width: 100%;
+}
+
+.Transfers.active .form-transfer div img{
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+}
+
+.Transfers.active .form-transfer div p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.7rem;
+    color: #333;
+}
+
+.Transfers.active .form-transfer .btn div{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+    border: none;
+}
+
+.Transfers.active .form-transfer .btn div button{
+    padding: 1rem;
+    width: 80%;
+    border: none;
+    background-color: #01a8fcc8;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.Transfers{
+    display: none;
+}
+
+/*Section 2*/
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.section2 .leyenda{
+    padding: 1rem;
+    color: #333;
+    font-size: 1.75rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: -25px;
+}
+
+.section2 .mensaje{
+    padding: 1rem;
+    color: #333;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+}
+
+.promociones{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+}
+
+.promociones div{
+    width: 33.33%;
+}
+
+.promociones div img{
+    width: 380px;
+    height: 250px;
+    position: relative;
+    display: block;
+}
+
+.promociones div{
+    display: flex;
+}
+
+.promociones div p{
+    position: absolute;
+    margin-top: 200px;
+    color: white;
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: 520;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.promociones div p.descuento{
+    margin-top: 215px;
+    font-size: 1.3rem;
+}
+
+/*Section 3*/
+
+.section3{
+    padding: 2.5rem;
+}
+
+.section3 .box{
+    display: flex;
+    flex-direction: column;
+    background-color: #fcfcfc;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+}
+
+.section3 .box div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 .box div img{
+    padding: 0.3rem;
+    margin-right: 4rem;
+    height: 68px;
+    width: 89px;
+}
+
+.section3 .box div p{
+    padding: 1rem;
+    color: #333;
+    line-height: 1.2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.section3 .box div .formas-pago{
+    padding: 1rem;
+    color: #5c469c;
+    line-height: 1.2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
